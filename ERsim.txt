@@ -1,0 +1,6 @@
+add Serious Bruce
+add Serious Wayne
+treat Serious
+treat Serious
+treat Serious
+exit

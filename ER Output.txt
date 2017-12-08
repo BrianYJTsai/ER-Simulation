@@ -1,0 +1,223 @@
+Command: Add patient Wayne,B. to Critical queue
+
+     Queues are:
+     Fair:  []
+     Serious:  []
+     Critical:  ['Wayne,B.'] 
+
+Command: Add patient Allen,B. to Serious queue
+
+     Queues are:
+     Fair:  []
+     Serious:  ['Allen,B.']
+     Critical:  ['Wayne,B.'] 
+
+Command: Add patient Kent,C. to Fair queue
+
+     Queues are:
+     Fair:  ['Kent,C.']
+     Serious:  ['Allen,B.']
+     Critical:  ['Wayne,B.'] 
+
+Command: Add patient Queen,O. to Critical queue
+
+     Queues are:
+     Fair:  ['Kent,C.']
+     Serious:  ['Allen,B.']
+     Critical:  ['Queen,O.', 'Wayne,B.'] 
+
+Command: Add patient Prince,D. to Serious queue
+
+     Queues are:
+     Fair:  ['Kent,C.']
+     Serious:  ['Prince,D.', 'Allen,B.']
+     Critical:  ['Queen,O.', 'Wayne,B.'] 
+
+Command: Add patient Jordan,H. to Fair queue
+
+     Queues are:
+     Fair:  ['Jordan,H.', 'Kent,C.']
+     Serious:  ['Prince,D.', 'Allen,B.']
+     Critical:  ['Queen,O.', 'Wayne,B.'] 
+
+Command: Treat next patient
+
+     Treating Wayne,B. from Critical queue
+     Queues are:
+     Fair:  ['Jordan,H.', 'Kent,C.']
+     Serious:  ['Prince,D.', 'Allen,B.']
+     Critical:  ['Queen,O.'] 
+
+Command: Treat next patient
+
+     Treating Queen,O. from Critical queue
+     Queues are:
+     Fair:  ['Jordan,H.', 'Kent,C.']
+     Serious:  ['Prince,D.', 'Allen,B.']
+     Critical:  [] 
+
+Command: Add patient Curry,A. to Fair queue
+
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.', 'Kent,C.']
+     Serious:  ['Prince,D.', 'Allen,B.']
+     Critical:  [] 
+
+Command: Treat next patient
+
+     Treating Allen,B. from Serious queue
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.', 'Kent,C.']
+     Serious:  ['Prince,D.']
+     Critical:  [] 
+
+Command: Treat next patient
+
+     Treating Prince,D. from Serious queue
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.', 'Kent,C.']
+     Serious:  []
+     Critical:  [] 
+
+Command: Treat next patient
+
+     Treating Kent,C. from Fair queue
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.']
+     Serious:  []
+     Critical:  [] 
+
+Command: Add patient Lance,D. to Critical queue
+
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.']
+     Serious:  []
+     Critical:  ['Lance,D.'] 
+
+Command: Add patient Jones,J. to Serious queue
+
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.']
+     Serious:  ['Jones,J.']
+     Critical:  ['Lance,D.'] 
+
+Command: Treat next patient
+
+     Treating Lance,D. from Critical queue
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.']
+     Serious:  ['Jones,J.']
+     Critical:  [] 
+
+Command: Treat next patient
+
+     Treating Jones,J. from Serious queue
+     Queues are:
+     Fair:  ['Curry,A.', 'Jordan,H.']
+     Serious:  []
+     Critical:  [] 
+
+Command: Treat next patient
+
+     Treating Jordan,H. from Fair queue
+     Queues are:
+     Fair:  ['Curry,A.']
+     Serious:  []
+     Critical:  [] 
+
+Command: Add patient Queen,O. to Critical queue
+
+     Queues are:
+     Fair:  ['Curry,A.']
+     Serious:  []
+     Critical:  ['Queen,O.'] 
+
+Command: Add patient Jones,J. to Serious queue
+
+     Queues are:
+     Fair:  ['Curry,A.']
+     Serious:  ['Jones,J.']
+     Critical:  ['Queen,O.'] 
+
+Command: Add patient Lance,D. to Fair queue
+
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Jones,J.']
+     Critical:  ['Queen,O.'] 
+
+Command: Add patient Palmer,R. to Serious queue
+
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Palmer,R.', 'Jones,J.']
+     Critical:  ['Queen,O.'] 
+
+Command: Add patient Allen,B. to Critical queue
+
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Palmer,R.', 'Jones,J.']
+     Critical:  ['Allen,B.', 'Queen,O.'] 
+
+Command: Add patient Wayne,B. to Serious queue
+
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Wayne,B.', 'Palmer,R.', 'Jones,J.']
+     Critical:  ['Allen,B.', 'Queen,O.'] 
+
+Command: Treat next patient on Serious queue
+
+     Treating Jones,J. from Serious queue
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Wayne,B.', 'Palmer,R.']
+     Critical:  ['Allen,B.', 'Queen,O.'] 
+
+Command: Treat all patients
+
+     Treating Queen,O. from Critical queue
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Wayne,B.', 'Palmer,R.']
+     Critical:  ['Allen,B.'] 
+
+     Treating Allen,B. from Critical queue
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Wayne,B.', 'Palmer,R.']
+     Critical:  [] 
+
+     Treating Palmer,R. from Serious queue
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  ['Wayne,B.']
+     Critical:  [] 
+
+     Treating Wayne,B. from Serious queue
+     Queues are:
+     Fair:  ['Lance,D.', 'Curry,A.']
+     Serious:  []
+     Critical:  [] 
+
+     Treating Curry,A. from Fair queue
+     Queues are:
+     Fair:  ['Lance,D.']
+     Serious:  []
+     Critical:  [] 
+
+     Treating Lance,D. from Fair queue
+     Queues are:
+     Fair:  []
+     Serious:  []
+     Critical:  [] 
+
+     No patients in queues
+
+Command: Treat next patient
+
+     No patients in queue
+
+Command: Exit
+
